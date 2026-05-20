@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaganashri TA | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">GT</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="projects-page">
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">Here are some projects I've built using Java, Spring, and Python.</p>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack (Java)</button>
+                <button class="filter-btn" data-filter="datascience">Data Science (Python)</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-item" data-category="fullstack">
+                    <div class="project-card-full">
+                        <img src="https://via.placeholder.com/600x400/0d6efd/white?text=Online+Bookstore" alt="Online Bookstore" class="project-full-img" onerror="this.src='https://via.placeholder.com/600x400/0d6efd/white?text=Bookstore'">
+                        <div class="project-full-info">
+                            <h3>Online Bookstore</h3>
+                            <p class="project-desc">A complete e-commerce web application where users can browse books, add to cart, and complete checkout. Built with Spring MVC and JDBC for database operations.</p>
+                            <div class="tech-stack">
+                                <span>Java</span><span>Spring MVC</span><span>JDBC</span><span>MySQL</span><span>HTML/CSS/JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                            <p class="feature-highlight"><strong>Key Features:</strong> GET /books, POST /cart, DELETE /cart/:id, POST /checkout endpoints.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="datascience">
+                    <div class="project-card-full">
+                        <img src="https://via.placeholder.com/600x400/198754/white?text=Sales+Analysis" alt="Sales Data Analysis" class="project-full-img" onerror="this.src='https://via.placeholder.com/600x400/198754/white?text=Data+Science'">
+                        <div class="project-full-info">
+                            <h3>Retail Sales Data Analysis</h3>
+                            <p class="project-desc">Performed exploratory data analysis on 50,000+ sales records using Python. Identified sales trends, seasonal patterns, and top-performing products.</p>
+                            <div class="tech-stack">
+                                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="fullstack">
+                    <div class="project-card-full">
+                        <img src="https://via.placeholder.com/600x400/6c757d/white?text=Student+Management" alt="Student Management" class="project-full-img" onerror="this.src='https://via.placeholder.com/600x400/6c757d/white?text=Student+API'">
+                        <div class="project-full-info">
+                            <h3>Student Management REST API</h3>
+                            <p class="project-desc">RESTful API for performing CRUD operations on student data. Includes input validation, exception handling, and MySQL database integration.</p>
+                            <div class="tech-stack">
+                                <span>Java</span><span>Spring Boot</span><span>Spring Data JPA</span><span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="datascience">
+                    <div class="project-card-full">
+                        <img src="https://via.placeholder.com/600x400/d63384/white?text=Customer+Segmentation" alt="Customer Segmentation" class="project-full-img" onerror="this.src='https://via.placeholder.com/600x400/d63384/white?text=Segmentation'">
+                        <div class="project-full-info">
+                            <h3>Customer Segmentation using K-Means</h3>
+                            <p class="project-desc">Applied unsupervised learning to segment customers based on purchase behavior. Used Scikit-learn for clustering and visualized results.</p>
+                            <div class="tech-stack">
+                                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="frontend">
+                    <div class="project-card-full">
+                        <img src="https://via.placeholder.com/600x400/0dcaf0/white?text=Portfolio+Website" alt="Portfolio Website" class="project-full-img" onerror="this.src='https://via.placeholder.com/600x400/0dcaf0/white?text=Portfolio'">
+                        <div class="project-full-info">
+                            <h3>Personal Portfolio Website</h3>
+                            <p class="project-desc">Responsive portfolio website with dark mode toggle, animations, and contact form validation. Built with pure HTML, CSS, and JavaScript.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span><span>CSS3 Flexbox/Grid</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">Live Demo</a>
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2024 Gaganashri TA. Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
