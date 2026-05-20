@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Gaganashri TA - Full Stack Java Developer and Data Science with Python">
+    <meta name="author" content="Gaganashri TA">
+    <title>Gaganashri TA | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">GT</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-image">
+                <div class="profile-img-wrapper">
+                    <img src="assets/images/profile.jpg" alt="Gaganashri TA Profile Picture" class="profile-img" onerror="this.src='https://randomuser.me/api/portraits/women/68.jpg'">
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="greeting">Hi, I'm <span class="highlight">Gaganashri TA</span></h1>
+                <p class="typed-text">Full Stack Java Developer | Data Science with Python</p>
+                <p class="bio">Building robust web applications with Java, Spring Boot, and modern frontend technologies. Leveraging Python for data analysis and machine learning solutions.</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Let's Connect</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/gaganashrita" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/gaganashrita" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/gaganashrita" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:gaganashri.ta@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview Section -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2 class="section-title">Core Technologies</h2>
+            <div class="skills-cloud">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Spring MVC</span>
+                <span class="skill-tag">Hibernate</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML5/CSS3</span>
+                <span class="skill-tag">MySQL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/project1.jpg" alt="Online Bookstore Project" onerror="this.src='https://via.placeholder.com/400x250/0d6efd/white?text=Bookstore'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Online Bookstore</h3>
+                        <p>Full-stack e-commerce platform with cart management, user authentication, and order processing using Spring MVC and JDBC.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="projects.html" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/project2.jpg" alt="Data Analysis Project" onerror="this.src='https://via.placeholder.com/400x250/198754/white?text=Data+Analysis'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Data Analysis</h3>
+                        <p>End-to-end data analysis pipeline using Python, Pandas, and Matplotlib to extract insights from retail sales data.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <a href="projects.html" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/project3.jpg" alt="Student Management System" onerror="this.src='https://via.placeholder.com/400x250/6c757d/white?text=Student+Management'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Management System</h3>
+                        <p>REST API for managing student records with CRUD operations, built with Spring Boot and MySQL database.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="projects.html" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gaganashri TA. Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
